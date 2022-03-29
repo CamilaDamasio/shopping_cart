@@ -1,4 +1,4 @@
-const abaixo_dez_reais = [
+const down = [
   {
     value: 657,
     items: [
@@ -235,4 +235,4 @@ const abaixo_dez_reais = [
   },
 ];
 
-export default abaixo_dez_reais;
+export default down;
