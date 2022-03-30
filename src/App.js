@@ -1,11 +1,11 @@
 import "./App.css";
 import down from "./data_down";
-import DataDownLibrary from "./components/DataDownLibrary";
+import DataDownList from "./components/DataDownList";
 
 function App() {
   return (
     <div className="App">
-      <DataDownLibrary down={down} />
+      <DataDownList down={down} />
     </div>
   );
 }

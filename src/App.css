@@ -1,3 +1,7 @@
 .App {
+  display: flex;
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(207, 213, 226);
 }
