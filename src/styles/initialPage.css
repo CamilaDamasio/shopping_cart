@@ -24,3 +24,33 @@ button.btn-initial-page {
   background-color: rgba(45, 59, 122, 0.637);
   font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width: 956px)
+{
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .btns {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 10vh;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  button.btn-initial-page {
+    height: 40px;
+    width: 40%;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(45, 59, 122, 0.637);
+    font-family: 'Poppins', sans-serif;
+  }
+}
