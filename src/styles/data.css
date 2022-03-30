@@ -180,7 +180,7 @@ ul::-webkit-scrollbar-thumb {
   .cart {
     display: flex;
     background-color: #fff;
-    width: 60vw;
+    width: 80vw;
     height: 90vh;
     flex-direction: column;
     margin: auto;
