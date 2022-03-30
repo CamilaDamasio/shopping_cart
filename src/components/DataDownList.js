@@ -12,10 +12,11 @@ function converterValor(value) {
       result += number;
     }
   }
-  return `R$ ${result}`;
+  return result;
 }
 
 function DataDownList(props) {
+  let sum = 0;
   const items = props.down[0].items;
   return (
     <div className="cart">
@@ -24,6 +25,8 @@ function DataDownList(props) {
       </div>
       <div className="products-list">
         {items.map((item, index) => {
+          sum += item.sellingPrice;
+          console.log(sum);
           return (
             <div className="product">
               <div className="product-img">
@@ -37,10 +40,10 @@ function DataDownList(props) {
               <div key={index} className="product-info">
                 <h6 className="product-name info">{item.name}</h6>
                 <h6 className="product-price info">
-                  {converterValor(String(item.price))}
+                  {`R$ ${converterValor(String(item.price))}`}
                 </h6>
                 <h6 className="product-selling-price info">
-                  {converterValor(String(item.sellingPrice))}
+                  {`R$ ${converterValor(String(item.sellingPrice))}`}
                 </h6>
               </div>
             </div>
@@ -49,7 +52,7 @@ function DataDownList(props) {
       </div>
       <div className="total">
         <h4 className="total-txt">Total</h4>
-        <h4 className="total-txt">R$</h4>
+        <h4 className="total-txt">{`R$ ${converterValor(String(sum))}`}</h4>
       </div>
       <div className="cart-btn">
       <button className="btn">Finalizar compra</button>
