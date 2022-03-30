@@ -181,7 +181,7 @@ ul::-webkit-scrollbar-thumb {
     display: flex;
     background-color: #fff;
     width: 80vw;
-    height: 90vh;
+    height: 85vh;
     flex-direction: column;
     margin: auto;
     border-radius: 7px;

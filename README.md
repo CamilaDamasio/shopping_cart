@@ -30,6 +30,7 @@ Este projeto foi construído para um teste na empresa Codeby.
 - Realizar chamadas de funções de forma consciente;
 - Detectar e solucionar problemas no código de forma mais objetiva;
 - Exercitar e aplicar hooks para tornar função acessível para outros componentes.
+- Exercitar e aplicar hooks do react para gerenciamento de estados.
 - Exercitar o uso de lógica de programação;
 - Entender e desenvolver o CSS para estilizar a página;
 - Exercitar a componentização de partes do código;
