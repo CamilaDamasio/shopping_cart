@@ -1,4 +1,4 @@
-const acima_dez_reais = [
+const up = [
   {
     value: 1401,
     items: [
@@ -519,4 +519,4 @@ const acima_dez_reais = [
   },
 ];
 
-export default acima_dez_reais;
+export default up;

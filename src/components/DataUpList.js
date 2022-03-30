@@ -16,15 +16,15 @@ function converter(num, format) {
   return result;
 }
 
-function DataDownList(props) {
+function DataUpList(props) {
   let sum = 0;
-  const items = props.down[0].items;
+  const items = props.up[0].items;
   return (
     <div className="cart">
       <div className="my-cart">
         <h3 className="my-cart-title">Meu carrinho</h3>
       </div>
-      <ul className="products-list-down">
+      <ul className="products-list-up">
         {items.map((item, index) => {
           sum += item.sellingPrice;
           console.log(sum);
@@ -53,7 +53,10 @@ function DataDownList(props) {
       </ul>
       <div className="total">
         <h4 className="total-txt">Total</h4>
-        <h4 className="total-txt">{`R$ ${converter(sum, '0,00')}`}</h4>
+        <h4 className="total-txt">{`R$ ${converter(sum, '00,00')}`}</h4>
+      </div>
+      <div className="free-shipping">
+        <p>Parabéns, sua compra tem frete grátis!</p>
       </div>
       <div className="cart-btn">
       <button className="btn">Finalizar compra</button>
@@ -62,4 +65,4 @@ function DataDownList(props) {
   );
 }
 
-export default DataDownList;
+export default DataUpList;
