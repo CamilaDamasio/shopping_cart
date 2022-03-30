@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Chocolate Shopping Cart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto criado colocando em prática os conhecimentos adquiridos em Front-End,  onde crio uma aplicação web desenvolvendo um “Carrinho de compras”, usando uma API armazenada neste projeto em './src/data' e listando os produtos exibindo o total da compra e uma mensagem informando se o pedido possui frete grátis.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# Sumário
 
-### `npm start`
+- [Status](#status)
+- [Habilidades desenvolvidas](#habilidades-desenvolvidas)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Organização e Estrutura do Projeto](#organização-e-estrutura-do-projeto)
+- [Pré-requisitos](#pré-requisitos)
+  - [Ferramentas necessárias](#ferramentas-necessárias)
+  - [Rodando a aplicação local](#rodando-a-aplicação-local)
+  - [Rodando a aplicação no heroku](#rodando-a-aplicação-no-heroku)
+- [Autora](#autora)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Status
 
-### `npm test`
+Este projeto foi construído para um teste na empresa Codeby.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+# Habilidades desenvolvidas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Exercitar os conceitos básicos do JavaScript e React enquanto Framework;
+- Realizar chamadas de funções de forma consciente;
+- Detectar e solucionar problemas no código de forma mais objetiva;
+- Exercitar e aplicar hooks para tornar função acessível para outros componentes.
+- Exercitar o uso de lógica de programação;
+- Entender e desenvolver o CSS para estilizar a página;
+- Exercitar a componentização de partes do código;
+- Entender e aplicar os conceitos de markdown na criação de um README estruturado;
+- Realizar o Deploy da aplicação no heroku;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Tecnologias utilizadas
 
-### `npm run eject`
+- [React](https://pt-br.reactjs.org/)
+- [Heroku](https://www.heroku.com/)
+- [GoogleFonts](https://fonts.google.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Organização e Estrutura do Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+O projeto está organizado e estruturado da seguinte maneira:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+├── public
+│    └── index.html
+└── src
+│    ├── components
+│    │   ├── DataDownList.js
+│    │   └── DataUpList.js
+│    ├── data
+│    │   ├── data_down.js
+│    │   └── data_up.js
+│    ├── hooks
+│    │   └── convertNumber.js
+│    ├── styles
+│    │   ├── App.css
+│    │   ├── data.css
+│    │   ├── index.css
+│    ├── App.js
+│    ├── index.js
+│    ├── reportWebVitals.js
+│    └── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Pré-requisitos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Ferramentas necessárias
 
-### Code Splitting
+Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
+ - [Git](https://git-scm.com);
+ - Um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) ou outro de sua preferência;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Rodando a aplicação local
 
-### Analyzing the Bundle Size
+ - Clone o Projeto e instale as dependências
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```bash
+    # Clone este repositório
+     # via HTTPS
+    $ https://github.com/CamilaDamasio/shopping_cart.git
+      # via SSH
+    $ git@github.com:CamilaDamasio/shopping_cart.git
 
-### Making a Progressive Web App
+    # Acesse a pasta do projeto no terminal/cmd
+    $ cd shopping_cart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    # Instale as dependências
+    $ npm install
 
-### Advanced Configuration
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ - Inicie o sistema:
 
-### Deployment
+    ```bash
+    # Inicie o sistema
+    $ npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ```
 
-### `npm run build` fails to minify
+## Rodando a aplicação no Heroku
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  O deploy desta aplicação foi hospedada no heroku.
+
+  - link: [https://shopping-cart-chocolate.herokuapp.com/](https://shopping-cart-chocolate.herokuapp.com/)
+
+---
+
+# Autora
+
+  Camila de Souza Damásio
+<br />
+  Estudante de Desenvolvimento WEB na Trybe, sempre aprendendo algo novo e eterna apaixonada por tecnologia!
+
+  <a href="https://www.linkedin.com/in/camilasdamasio/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+---

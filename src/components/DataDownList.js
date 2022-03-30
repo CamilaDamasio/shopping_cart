@@ -3,6 +3,7 @@ import "../styles/data.css";
 import convertNumber from "../hooks/convertNumber";
 
 function DataDownList(props) {
+  console.log(props);
   let sum = 0;
   const items = props.down[0].items;
   return (
