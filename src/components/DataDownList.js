@@ -42,7 +42,7 @@ function DataDownList(props) {
         <h4 className="total-txt">{`R$ ${convertNumber(sum, '0,00')}`}</h4>
       </div>
       <div className="cart-btn">
-      <button className="btn">Finalizar compra</button>
+      <button className="btn-list">Finalizar compra</button>
       </div>
     </div>
   );

@@ -121,7 +121,7 @@ ul.products-list-down {
   border-top: 1px solid rgb(220, 220, 220);
 }
 
-button {
+button.btn-list {
   height: 40px;
   width: 90%;
   color: #fff;

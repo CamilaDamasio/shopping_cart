@@ -44,7 +44,7 @@ function DataUpList(props) {
         <p>Parabéns, sua compra tem frete grátis!</p>
       </div>
       <div className="cart-btn">
-      <button className="btn">Finalizar compra</button>
+      <button className="btn-list">Finalizar compra</button>
       </div>
     </div>
   );

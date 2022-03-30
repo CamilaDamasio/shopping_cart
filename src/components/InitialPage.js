@@ -4,7 +4,7 @@ import DataUpList from "./DataUpList";
 import "../styles/initialPage.css"
 
 function InitialPage(props) {
-  const [upList, setUpList] = useState(false);
+  const [upList, setUpList] = useState(true);
   const [downList, setDownList] = useState(false);
   
   function eventButtonUp(e) {
@@ -24,8 +24,8 @@ function InitialPage(props) {
   return (
     <div className="main">
       <div className="btns">
-        <button type="button" onClick={(e) => eventButtonUp(e, props)}>Up</button>
-        <button type="button" onClick={(e) => eventButtonDown(e, props)}>Down</button>
+        <button type="button" className="btn-initial-page" onClick={(e) => eventButtonUp(e, props)}>Com frete grátis</button>
+        <button type="button" className="btn-initial-page" onClick={(e) => eventButtonDown(e, props)}>Sem frete grátis</button>
       </div>
       {upList ? <DataUpList up={props.up} /> : null }
       {downList ? <DataDownList down={props.down} /> : null }
