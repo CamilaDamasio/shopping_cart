@@ -76,6 +76,11 @@ ul.products-list-down {
 .product-name {
   margin: 0 0 15px;
   text-align: left;
+  text-transform: lowercase;
+}
+
+.product-name:first-letter {
+  text-transform: capitalize;
 }
 
 .product-price {
