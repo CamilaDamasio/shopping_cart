@@ -30,6 +30,10 @@ button.btn-initial-page:hover {
   background-color: rgba(45, 59, 122, 0.9);
 }
 
+button.btn-initial-page:active {
+  background-color: rgba(45, 59, 122, 1.5);
+}
+
 @media (max-width: 956px)
 {
   .main {

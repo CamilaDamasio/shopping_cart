@@ -138,6 +138,10 @@ button.btn-list {
   margin: 10px;
 }
 
+button.btn-list:active {
+  background-color: rgba(0, 143, 205, 0.8);
+}
+
 ul::-webkit-scrollbar {
   width: 10px;
 }
