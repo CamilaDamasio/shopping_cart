@@ -129,6 +129,7 @@ button.btn-list {
   border-radius: 6px;
   background-color: rgb(0, 143, 205);
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 ul::-webkit-scrollbar {
