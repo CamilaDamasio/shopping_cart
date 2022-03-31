@@ -53,11 +53,13 @@ O projeto está organizado e estruturado da seguinte maneira:
 
 ```bash
 ├── public
+│    ├── favicon.ico
 │    └── index.html
 └── src
 │    ├── components
 │    │   ├── DataDownList.js
-│    │   └── DataUpList.js
+│    │   ├── DataUpList.js
+│    │   └── InitialPage.js
 │    ├── data
 │    │   ├── data_down.js
 │    │   └── data_up.js
@@ -67,6 +69,7 @@ O projeto está organizado e estruturado da seguinte maneira:
 │    │   ├── App.css
 │    │   ├── data.css
 │    │   ├── index.css
+│    │   └── initialPage.css
 │    ├── App.js
 │    ├── index.js
 │    ├── reportWebVitals.js
@@ -93,9 +96,9 @@ Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
     ```bash
     # Clone este repositório
      # via HTTPS
-    $ https://github.com/CamilaDamasio/shopping_cart.git
+    $ git clone https://github.com/CamilaDamasio/shopping_cart.git
       # via SSH
-    $ git@github.com:CamilaDamasio/shopping_cart.git
+    $ git clone git@github.com:CamilaDamasio/shopping_cart.git
 
     # Acesse a pasta do projeto no terminal/cmd
     $ cd shopping_cart
