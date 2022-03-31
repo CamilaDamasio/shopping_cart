@@ -43,20 +43,21 @@ button.btn-initial-page:hover {
   .btns {
     display: flex;
     align-items: center;
-    width: 60vw;
+    width: 90vw;
     height: 10vh;
     justify-content: space-around;
     flex-direction: row;
   }
 
   button.btn-initial-page {
-    height: 40px;
-    width: 40%;
+    height: 55px;
+    width: 30%;
     color: #fff;
     border: none;
     border-radius: 6px;
     background-color: rgba(45, 59, 122, 0.637);
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+    font-size: 12px;
   }
 }
